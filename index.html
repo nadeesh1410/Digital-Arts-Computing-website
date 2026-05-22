@@ -1,52 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Hidden Veins — Goldsmiths DAC 2026</title>
-<link rel="icon" href="favicon.ico"/>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
-<!-- Papa Parse: robust CSV parsing -->
-<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-<style>
-  /* CSS from dac.html, preserved for full visual design. Paste your real code here. */
-  :root { --bg:#0d0c0b;--surface:#141310;--border:rgba(255,255,255,0.07);--ink:#f0ece4;--muted:rgba(240,236,228,0.45);--accent:#c8b89a;--gap:14px;--header-h:56px;--serif:"EB Garamond",Georgia,seri[...]
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html,body{background:var(--bg);color:var(--ink);font-family:var(--serif);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;min-height:100vh;}
-  body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background-image:radial-gradient(ellipse 80% 50% at 20% 30%, rgba(180,140,90,0.04) 0%, transparent 60%),radial-gradie[...]
-  ::selection{background:var(--accent);color:var(--bg);}
-  header{position:sticky;top:0;z-index:50;height:var(--header-h);display:flex;align-items:center;justify-content:space-between;padding:0 28px;background:rgba(13,12,11,0.88);backdrop-filter:blur(16[...]
-</style>
+  <meta charset="UTF-8">
+  <title>Digital Arts Computing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #191e19;
+      color: #f0ece4;
+      min-height: 100vh;
+    }
+    header {
+      padding: 24px 10px 5px 10px;
+      background: #233323;
+      color: #f7fbef;
+      letter-spacing: 1px;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: left;
+      border-bottom: 2px solid #9ed8c1;
+    }
+    .container {
+      max-width: 900px;
+      margin: 36px auto;
+      background: #202a21;
+      padding: 36px;
+      border-radius: 10px;
+      box-shadow: 0 3px 32px 0 #0002;
+    }
+    .welcome {
+      font-size: 2.2em;
+      margin-bottom: 0.5em;
+      color: #e3f1c0;
+    }
+    .info {
+      font-size: 1.2em;
+      margin-bottom: 1em;
+      color: #a7b4b0;
+    }
+    .github-link, .art-link {
+      color: #9ed8c1;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .github-link:hover, .art-link:hover {
+      text-decoration: underline;
+      color: #e3f1c0;
+    }
+    footer {
+      text-align: center;
+      color: #909c93;
+      padding: 24px 12px 0 12px;
+      margin-top: 60px;
+      font-size: 1em;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="brand">
-      Hidden Veins
-      <small>Goldsmiths DAC &middot; 2026</small>
-    </div>
-    <nav id="filters">
-      <button data-filter="all" class="active">All</button>
-      <button data-filter="installation">Installation</button>
-      <button data-filter="sound">Sound</button>
-      <button data-filter="vr">VR</button>
-      <button data-filter="generative">Generative</button>
-      <button data-filter="physical">Physical</button>
-      <button data-filter="about-btn" id="aboutBtn">About</button>
-    </nav>
-  </header>
-  <main id="mainGrid">
-    <div id="status">Loading the exhibition…</div>
-    <div id="grid"></div>
-  </main>
-  <section id="about-page" hidden></section>
-  <div id="modal" role="dialog" aria-modal="true">
-    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
-    <div class="modal-inner" id="modalInner"></div>
+  <header>Digital Arts Computing</header>
+  <div class="container">
+    <div class="welcome">Welcome!</div>
+    <div class="info">This is the Digital Arts Computing website.<br>Your site is now loading correctly via GitHub Pages.</div>
+    <ul>
+      <li>See the source code here: <a class="github-link" href="https://github.com/nadeesh1410/Digital-Arts-Computing-website" target="_blank">GitHub Repository</a></li>
+    </ul>
+    <p>If you would like to display art cards or extra content, please provide the static HTML or built output, or contact the original developers for a static site export.</p>
   </div>
-  <script>
-// == JavaScript from dac.html would be fully pasted here ==
-// (For brevity, this is a placeholder. You should paste the entire dac.html JavaScript block here!)
-// Make sure to set your CSV_URL, DEMO data, and all rendering/filter logic!
-  </script>
+  <footer>
+    &copy; 2026 Digital Arts Computing. This simple landing page is a placeholder until a statically built site is provided.
+  </footer>
 </body>
 </html>
